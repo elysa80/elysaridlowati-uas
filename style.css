@@ -1,0 +1,206 @@
+/* Reset dan font dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Warna latar belakang dan teks */
+body {
+  background-color: #f986ad;
+  color: #7e2245;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #f3a4d4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Navigasi */
+nav {
+  background: #ffb6c1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Tautan Navigasi */
+nav a,
+nav .dropbtn {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav .dropbtn:hover {
+  background-color: #ff1493;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #ffb6c1;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  background-color: #ff69b4;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-content a:hover {
+  background-color: #ff1493;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Container Utama */
+.container {
+  padding: 20px;
+}
+
+/* Layout responsif */
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .main-content {
+    flex: 3;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}
+
+/* Kartu konten */
+.card {
+  background: #ffe4e1;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Gambar profil */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Opini */
+.opini {
+  background-color: #fff;
+  padding: 12px;
+  border-left: 5px solid #ff69b4;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #ff1493;
+  font-style: italic;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ffb6c1;
+  text-align: left;
+}
+
+th {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* Tombol */
+.btn,
+form input[type="submit"],
+form button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #ff1493;
+}
+
+.btn-danger {
+  background-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+/* Formulir */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
